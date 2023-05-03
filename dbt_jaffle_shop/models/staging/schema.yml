@@ -2,8 +2,8 @@ version: 2
 
 sources:
   - name: jaffle_shop
-    database: anna
-    schema: anna_demo
+    database: VJENSEN #change this to your dev
+    schema: HACK #change this to your dev
     tables:
       - name: raw_orders
       - name: raw_customers

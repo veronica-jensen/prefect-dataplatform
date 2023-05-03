@@ -8,7 +8,7 @@ async def get_workspace() -> str:
         async with get_cloud_client() as client:
             workspaces = await client.read_workspaces()
             current_workspace = get_current_workspace(workspaces)
-            workspace_handle = current_workspace.split("/")[-1]
+            workspace_handle = current_workspace.handle.split("/")[-1]
             return workspace_handle
     except CloudUnauthorizedError:
         return "default"  # means: local Orion instance and the default CLI Profile
