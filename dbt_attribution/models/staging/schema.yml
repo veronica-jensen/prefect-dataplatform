@@ -2,8 +2,8 @@ version: 2
 
 sources:
   - name: attribution
-    database: anna
-    schema: anna_demo
+    database: vjensen #change this to your dev
+    schema: hack #change this to your dev
     tables:
       - name: raw_ad_spend
       - name: raw_customer_conversions
